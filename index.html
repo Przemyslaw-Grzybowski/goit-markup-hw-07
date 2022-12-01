@@ -564,80 +564,110 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button type="button" class="close-btn" data-modal-close>
-                    <svg class="icon-btn" height="11" width="11">
+                <button type="button" class="modal__close-btn" data-modal-close>
+                    <svg height="11" width="11">
                         <use href="./images/icons.svg#close-btn"></use>
                     </svg>
                 </button>
                 <div class="modal-form">
-                    <p class="info-form">
+                    <p class="modal-form__text">
                         Zostaw swoje dane w formularzu poniżej
                     </p>
-                    <form name="name of person" class="form-data">
-                        <fieldset class="field-set">
-                            <label for="name" class="label">Imie</label>
-                            <svg class="icon-field" width="12" height="12">
+                    <form name="name of person" class="modal__form-data">
+                        <fieldset class="modal__field-setup">
+                            <label for="name" class="modal-label">Imie</label>
+                            <svg
+                                class="modal__field-setup--icon"
+                                width="12"
+                                height="12"
+                            >
                                 <use href="./images/icons.svg#icon-name"></use>
                             </svg>
-                            <input type="text" id="name" class="name-input" />
+                            <input
+                                type="text"
+                                id="name"
+                                class="modal__field-setup--input"
+                            />
                         </fieldset>
                     </form>
-                    <form name="mobile phone" class="form-data">
-                        <fieldset class="field-set">
-                            <label for="mobile-phone" class="label"
+                    <form name="mobile phone" class="modal__form-data">
+                        <fieldset class="modal__field-setup">
+                            <label for="mobile-phone" class="modal-label"
                                 >Telefon</label
                             >
-                            <svg class="icon-field" width="13" height="13">
+                            <svg
+                                class="modal__field-setup--icon"
+                                width="13"
+                                height="13"
+                            >
                                 <use href="./images/icons.svg#icon-phone"></use>
                             </svg>
                             <input
                                 type="tel"
                                 id="mobile-phone"
-                                class="name-input"
+                                class="modal__field-setup--input"
                             />
                         </fieldset>
                     </form>
-                    <form name="email data" class="form-data">
-                        <fieldset class="field-set">
-                            <label for="email" class="label">Email</label>
-                            <svg class="icon-field" width="15" height="12">
+                    <form name="email data" class="modal__form-data">
+                        <fieldset class="modal__field-setup">
+                            <label for="email" class="modal-label">Email</label>
+                            <svg
+                                class="modal__field-setup--icon"
+                                width="15"
+                                height="12"
+                            >
                                 <use href="./images/icons.svg#icon-mail"></use>
                             </svg>
-                            <input type="tel" id="email" class="name-input" />
+                            <input
+                                type="tel"
+                                id="email"
+                                class="modal__field-setup--input"
+                            />
                         </fieldset>
                     </form>
-                    <form name="commets field" class="form-data">
-                        <fieldset class="field-comments">
-                            <label for="comments" class="label"
+                    <form name="comments field" class="modal__form-data">
+                        <fieldset class="modal__field-comments">
+                            <label for="comments" class="modal-label"
                                 >Komentarz</label
                             >
 
                             <textarea
                                 name="comments-section"
                                 id="comments"
-                                class="comment-input"
+                                class="modal__field-comments--input"
                                 placeholder="Wprowadź tekst"
                                 rows="5"
                             ></textarea>
                         </fieldset>
                     </form>
-                    <label for="checkme" class="checkboxlabel">
-                        <input type="checkbox" id="checkme" class="checker" />
+                    <label for="checkme" class="modal-checkbox">
+                        <input
+                            type="checkbox"
+                            id="checkme"
+                            class="modal-checkbox__checker"
+                        />
 
-                        <svg class="bug" width="16" height="15">
+                        <svg class="modal-checkbox__svg" width="16" height="15">
                             <use href="./images/icons.svg#icon-mark"></use>
                         </svg>
-                        <div class="checkboxborder"></div>
+                        <div class="modal-checkbox__border"></div>
                         Oświadczam iż akceptuję
-                        <a href="#" target="_blank" class="send-policy"
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="modal-checkbox__field--text"
                             >Regulamin
                         </a>
                         i
-                        <a href="#" target="_blank" class="send-policy"
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="modal-checkbox__field--text"
                             >Politykę Prywatności.</a
                         >
                     </label>
-                    <button type="button" class="sendbtn">Wyślij</button>
+                    <button type="button" class="modal-btn">Wyślij</button>
                 </div>
             </div>
         </div>

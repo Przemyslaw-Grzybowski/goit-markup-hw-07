@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>goit-markup-hw-05</title>
+        <title>goit-markup-hw-07</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -20,38 +20,46 @@
         <header>
             <section>
                 <div class="container">
-                    <section class="header-top">
-                        <nav class="top-part">
-                            <a class="logo-h" href="#"
-                                ><span class="web-word">Web</span>Studio</a
+                    <section class="header-block">
+                        <nav class="header-nav">
+                            <a class="header-nav__logo" href="#"
+                                ><span class="header-nav__logo--icon">Web</span
+                                >Studio</a
                             >
-                            <ul class="header-list">
+                            <ul class="header-sides">
                                 <li>
-                                    <a class="header-link" href="./index.html"
+                                    <a
+                                        class="header-sides__webpage-one"
+                                        href="./index.html"
                                         >Agencja</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        class="header-portfolio"
+                                        class="header-sides__webpage-two"
                                         href="./portfolio.html"
                                         >Portfolio</a
                                     >
                                 </li>
                                 <li>
-                                    <a class="header-link" href="#">Kontakt</a>
+                                    <a
+                                        class="header-sides__webpage-two"
+                                        href="#"
+                                        target="_blank"
+                                        >Kontakt</a
+                                    >
                                 </li>
                             </ul>
                         </nav>
 
-                        <ul class="header-list-link">
+                        <ul class="header-contacts">
                             <li>
                                 <a
-                                    class="header-contact"
+                                    class="header-contacts__redirection"
                                     href="mailto:info@devstudio.com"
                                 >
                                     <svg
-                                        class="header-envelope"
+                                        class="header-contacts__redirection--icon"
                                         width="16"
                                         height="12"
                                     >
@@ -64,11 +72,11 @@
                             </li>
                             <li>
                                 <a
-                                    class="header-contact"
+                                    class="header-contacts__redirection"
                                     href="tel:+48 111 111 111"
                                 >
                                     <svg
-                                        class="header-mobile"
+                                        class="header-contacts__redirection--icon"
                                         width="10"
                                         height="16px"
                                     >
@@ -343,62 +351,65 @@
             </section>
         </main>
         <footer>
-            <section class="footer">
+            <section class="footer-background">
                 <div class="container">
-                    <div class="footer-all">
-                        <div class="left-side">
-                            <a class="logo-f" href="#"
-                                ><span class="web-word">Web</span
-                                ><span class="studio-footer">Studio</span></a
+                    <div class="footer-section">
+                        <div class="footer-info">
+                            <a class="footer-info__logo" href="#"
+                                ><span class="footer-info__logo--color-one"
+                                    >Web</span
+                                ><span class="footer-info__logo--color-two"
+                                    >Studio</span
+                                ></a
                             >
 
-                            <ul class="footer-list">
+                            <ul class="footer-info__data">
                                 <li>
-                                    <p class="place">
+                                    <p class="footer-info__data--address">
                                         m. Warszawa, Aleje Jerozolimskie 21
                                     </p>
                                 </li>
                                 <li>
                                     <a
-                                        class="footer-link"
+                                        class="footer-info__data--contact"
                                         href="mailto:info@example.com"
                                         >info@example.com</a
                                     >
                                 </li>
                                 <li>
                                     <a
-                                        class="footer-link"
+                                        class="footer-info__data--contact"
                                         href="tel:++48 111 111 111"
                                         >+48 111 111 111</a
                                     >
                                 </li>
                             </ul>
                         </div>
-                        <div class="box-join-us">
-                            <div class="join-us">DOŁĄCZ DO NAS</div>
-                            <div class="social-network-footer">
-                                <div class="logo-sn-footer">
+                        <div class="footer-media">
+                            <div class="footer-media__text">DOŁĄCZ DO NAS</div>
+                            <div class="footer-media__redirection">
+                                <div class="footer-media__redirection--icon">
                                     <svg width="20" height="20">
                                         <use
                                             href="./images/icons.svg#icon-instagram-2"
                                         ></use>
                                     </svg>
                                 </div>
-                                <div class="logo-sn-footer">
+                                <div class="footer-media__redirection--icon">
                                     <svg width="20" height="20">
                                         <use
                                             href="./images/icons.svg#icon-twitter-1"
                                         ></use>
                                     </svg>
                                 </div>
-                                <div class="logo-sn-footer">
+                                <div class="footer-media__redirection--icon">
                                     <svg width="20" height="20">
                                         <use
                                             href="./images/icons.svg#icon-facebook-1"
                                         ></use>
                                     </svg>
                                 </div>
-                                <div class="logo-sn-footer">
+                                <div class="footer-media__redirection--icon">
                                     <svg width="20" height="20">
                                         <use
                                             href="./images/icons.svg#icon-linkedin-1"
@@ -407,21 +418,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="signupbox">
-                            <label for="user-email" class="label-news">
+                        <div class="footer-newsletter">
+                            <label
+                                for="user-email"
+                                class="footer-newsletter__signup"
+                            >
                                 ZAPISZ SIĘ DO NEWSLETTERA
 
                                 <input
-                                    class="email-input"
+                                    class="footer-newsletter__signup--mail"
                                     type="email"
                                     name="email"
                                     placeholder="E-mail"
                                 />
                             </label>
 
-                            <button type="button" class="news-button">
+                            <button
+                                type="button"
+                                class="footer-newsletter__button"
+                            >
                                 Zapisz się
-                                <svg class="icon-send">
+                                <svg class="footer-newsletter__button--icon">
                                     <use
                                         href="./images/icons.svg#icon-send"
                                     ></use>
