@@ -605,7 +605,7 @@ body {
 
 /* przyciski */
 
-.navigation {
+.selection-buttons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -613,7 +613,7 @@ body {
     height: 38px;
     gap: 8px;
 }
-.button {
+.selection-buttons__button {
     border: none;
     cursor: pointer;
     display: block;
@@ -629,30 +629,27 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover {
+.selection-buttons__button:hover {
     background-color: var(--active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 
     color: #ffffff;
 }
-.button:focus {
+.selection-buttons__button:focus {
     background-color: var(--active-color);
     color: #ffffff;
     outline: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.button:active {
+.selection-buttons__button:active {
     background-color: var(--active-color);
 }
 
 /* Obrazy */
 
-.pictures {
-    display: block;
-}
-.projects {
+.projects-flex {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -663,28 +660,28 @@ body {
     gap: 30px;
     padding-bottom: 94px;
 }
-.info-block-two {
+.project-block {
     flex-basis: calc((100% - 60px) / 3);
     background: #ffffff;
     width: 370px;
     transition-property: box-shadow;
     transition-duration: 250ms;
 }
-.info-block-two:hover,
-.info-block-two:hover .bluebox {
+.project-block:hover,
+.project-block:hover .blue-window__details {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: translateY(0);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.bluebox-background {
+.blue-window {
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
 
-.bluebox {
+.blue-window__details {
     border: 0px;
     position: absolute;
     width: 100%;
@@ -695,7 +692,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.bluebox-text {
+.blue-window__details--text {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -705,16 +702,15 @@ body {
     padding-left: 24px;
     padding-right: 45px;
 }
-.borderline {
-    border: 1px solid #eeeeee;
-}
-
-.picture {
+.blue-window__picture-before {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-.proj-title {
+.project-block__description {
+    border: 1px solid #eeeeee;
+}
+.project-block__description--title {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.89;
@@ -725,7 +721,7 @@ body {
 
     margin: 20px 24px 4px 24px;
 }
-.proj-description {
+.project-block__description--text {
     display: flex;
     justify-content: flex-start;
     font-size: 16px;
