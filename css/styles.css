@@ -7,9 +7,13 @@
 
 :root {
     --active-color: #2196f3;
-    --bcg2-color: #f5f4fa;
     --bcg1-color: #2f303a;
+    --bcg2-color: #f5f4fa;
+    --bcg3-color: #eeeeee;
     --default-color: #212121;
+    --default-color2: #ffffff;
+    --default-color3: #757575;
+    --default-color4: #afb1b8;
 }
 
 body {
@@ -45,7 +49,7 @@ body {
 .header-block {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--bcg3-color);
 }
 
 .header-nav {
@@ -107,7 +111,7 @@ body {
     position: absolute;
     content: "";
     height: 4px;
-    background-color: #2196f3;
+    background-color: var(--active-color);
     width: 100%;
     border-radius: 2px;
     bottom: -33px;
@@ -152,8 +156,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #757575;
-    fill: #757575;
+    color: var(--default-color3);
+    fill: var(--default-color3);
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -202,7 +206,7 @@ body {
 
     margin-left: auto;
     margin-right: auto;
-    color: #ffffff;
+    color: var(--default-color2);
 }
 
 .slogan__button {
@@ -227,7 +231,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
 
-    color: #ffffff;
+    color: var(--default-color2);
 }
 
 /* Druga sekcja */
@@ -248,7 +252,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5f4fa;
+    background-color: var(--bcg2-color);
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -266,7 +270,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--default-color3);
     width: 270px;
 }
 
@@ -295,7 +299,7 @@ body {
     line-height: 1.42;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--default-color2);
     text-align: center;
     padding-top: 27px;
 }
@@ -303,7 +307,7 @@ body {
 /* Czwarta sekcja*/
 
 .team-background {
-    background-color: #f5f4fa;
+    background-color: var(--bcg2-color);
 }
 .team-list {
     list-style: none;
@@ -315,7 +319,7 @@ body {
     border-bottom-right-radius: 4px;
 }
 .team-member {
-    background: #ffffff;
+    background: var(--default-color2);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -339,7 +343,7 @@ body {
     letter-spacing: 0.03em;
     padding-bottom: 30px;
 
-    color: #757575;
+    color: var(--default-color3);
 }
 .team-member__media {
     display: flex;
@@ -353,7 +357,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #afb1b8;
+    fill: var(--default-color4);
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -381,9 +385,9 @@ body {
 .clients__logo {
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
+    border: 1px solid var(--default-color4);
     border-radius: 4px;
-    fill: #afb1b8;
+    fill: var(--default-color4);
     transition-property: fill, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -391,7 +395,7 @@ body {
 
 .clients__logo:hover {
     cursor: pointer;
-    border: 1px solid #2196f3;
+    border: 1px solid var(--active-color);
     border-radius: 4px;
     fill: var(--active-color);
     fill: var(--active-color);
@@ -427,11 +431,11 @@ body {
 }
 
 .footer-info__logo--color-one {
-    color: #2196f3;
+    color: var(--active-color);
 }
 
 .footer-info__logo--color-two {
-    color: #ffffff;
+    color: var(--default-color2);
 }
 .footer-info__data {
     list-style: none;
@@ -448,7 +452,7 @@ body {
     letter-spacing: 0.03em;
 
     margin-bottom: auto;
-    color: #ffffff;
+    color: var(--default-color2);
 }
 
 .footer-info__data--contact {
@@ -483,7 +487,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
 
-    color: #ffffff;
+    color: var(--default-color2);
     padding-left: 70px;
     padding-bottom: 20px;
 }
@@ -536,7 +540,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #ffffff;
+    color: var(--default-color2);
     padding-bottom: 20px;
 }
 
@@ -588,7 +592,7 @@ body {
     text-align: left;
     letter-spacing: 0.06em;
 
-    color: #ffffff;
+    color: var(--default-color2);
 }
 
 .footer-newsletter__button--icon {
@@ -634,11 +638,11 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 
-    color: #ffffff;
+    color: var(--default-color2);
 }
 .selection-buttons__button:focus {
     background-color: var(--active-color);
-    color: #ffffff;
+    color: var(--default-color2);
     outline: none;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -662,7 +666,7 @@ body {
 }
 .project-block {
     flex-basis: calc((100% - 60px) / 3);
-    background: #ffffff;
+    background: var(--default-color2);
     width: 370px;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -697,7 +701,7 @@ body {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--default-color2);
     padding-top: 49px;
     padding-left: 24px;
     padding-right: 45px;
@@ -708,7 +712,7 @@ body {
     margin-right: auto;
 }
 .project-block__description {
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--bcg3-color);
 }
 .project-block__description--title {
     font-weight: 700;
@@ -729,7 +733,7 @@ body {
     text-align: left;
     letter-spacing: 0.03em;
     padding: 4px 24px 20px 24px;
-    color: #757575;
+    color: var(--default-color3);
 }
 
 /* BACKDROP */
@@ -765,7 +769,7 @@ body {
     height: 581px;
     left: 35%;
     top: 25%;
-    background: #ffffff;
+    background: var(--default-color2);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -783,8 +787,8 @@ body {
     height: 30px;
     margin-top: 8px;
     margin-left: 490px;
-    fill: #212121;
-    background-color: #ffffff;
+    fill: var(--default-color);
+    background-color: var(--default-color2);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -805,7 +809,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: #212121;
+    color: var(--default-color);
     margin-bottom: 2px;
 }
 
@@ -825,17 +829,17 @@ body {
 }
 
 .modal__field-setup:has(.modal__field-setup--input:focus) {
-    border-color: #2196f3;
+    border-color: var(--active-color);
 }
 .modal__field-setup:has(.modal__field-setup--input:focus)
     .modal__field-setup--icon {
-    fill: #2196f3;
+    fill: var(--active-color);
 }
 
 .modal__field-setup--icon {
     margin-top: 14px;
     margin-left: 15px;
-    fill: #212121;
+    fill: var(--default-color);
     transition: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -853,7 +857,7 @@ body {
 
     letter-spacing: 0.01em;
 
-    color: #757575;
+    color: var(--default-color3);
 }
 
 .modal__field-setup--input {
@@ -866,7 +870,7 @@ body {
     line-height: 14px;
     letter-spacing: 0.01em;
     width: 100%;
-    color: #000;
+    color: var(--default-color);
 }
 .modal__field-setup--input:focus {
     outline: none;
@@ -896,7 +900,7 @@ body {
     line-height: 14px;
     letter-spacing: 0.01em;
 
-    color: #000;
+    color: var(--default-color);
 
     margin-top: 12px;
     margin-left: 16px;
@@ -923,7 +927,7 @@ body {
 }
 
 .modal__field-comments:has(.modal__field-comments--input:focus) {
-    border-color: #2196f3;
+    border-color: var(--active-color);
 }
 
 .modal-checkbox {
@@ -939,7 +943,7 @@ body {
 
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--default-color3);
 }
 
 .modal-checkbox__checker {
@@ -957,14 +961,14 @@ body {
     top: 4px;
     left: -20px;
     opacity: 0;
-    fill: #212121;
+    fill: var(--default-color);
 }
 .modal-checkbox__border {
     position: absolute;
     display: block;
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
+    border: 2px solid var(--default-color);
     border-radius: 2px;
     left: -20px;
     top: 4px;
@@ -986,8 +990,8 @@ body {
 
 .modal-checkbox__checker:checked + .modal-checkbox__svg {
     opacity: 1;
-    fill: #ffffff;
-    background-color: #2196f3;
+    fill: var(--default-color2);
+    background-color: var(--active-color);
 }
 
 .modal-btn {
@@ -1010,7 +1014,7 @@ body {
 
     text-align: center;
     letter-spacing: 0.06em;
-    color: #ffffff;
+    color: var(--default-color2);
 
     margin-top: 30px;
     margin-left: 164px;
