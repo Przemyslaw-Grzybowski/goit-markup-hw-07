@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+/*I
 :root {
     --active-color: #2196f3;
     --bcg1-color: #2f303a;
@@ -15,6 +16,8 @@
     --default-color3: #757575;
     --default-color4: #afb1b8;
 }
+
+
 
 body {
     font-family: "Roboto", sans-serif;
@@ -33,7 +36,7 @@ body {
     padding: 0 15px;
 }
 
-/* section-title to klasa dla h2*/
+
 
 .section-title {
     font-size: 36px;
@@ -44,7 +47,7 @@ body {
     margin: 0px;
 }
 
-/* HEADER */
+
 
 .header-block {
     display: flex;
@@ -87,6 +90,23 @@ body {
     margin-top: 32px;
     margin-bottom: 32px;
     gap: 46px;
+}
+.header-sides__webpage {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--default-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-sides__webpage:hover {
+    cursor: pointer;
+    color: var(--active-color);
 }
 
 .header-sides__webpage-one {
@@ -135,6 +155,16 @@ body {
     cursor: pointer;
     color: var(--active-color);
 }
+.header-sides__webpage-two::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    background-color: var(--active-color);
+    width: 100%;
+    border-radius: 2px;
+    bottom: -33px;
+    left: 0px;
+}
 
 .header-contacts {
     list-style: none;
@@ -178,8 +208,7 @@ body {
     margin-right: 10px;
 }
 
-/* MAIN */
-/* Pierwsza sekcja */
+
 .background-picture {
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -234,7 +263,7 @@ body {
     color: var(--default-color2);
 }
 
-/* Druga sekcja */
+
 
 .lorem-ipsum {
     padding-top: 94px;
@@ -274,7 +303,6 @@ body {
     width: 270px;
 }
 
-/* Trzecia sekcja*/
 
 .daily-business {
     position: relative;
@@ -304,7 +332,7 @@ body {
     padding-top: 27px;
 }
 
-/* Czwarta sekcja*/
+
 
 .team-background {
     background-color: var(--bcg2-color);
@@ -372,7 +400,7 @@ body {
     fill: var(--bcg2-color);
 }
 
-/* CLIENT */
+
 
 .clients {
     list-style: none;
@@ -401,7 +429,7 @@ body {
     fill: var(--active-color);
 }
 
-/* FOOTER */
+
 
 .footer-background {
     background-color: var(--bcg1-color);
@@ -604,10 +632,7 @@ body {
 
     fill: var(--bcg2-color);
 }
-/* druga strona */
-/* MAIN*/
 
-/* przyciski */
 
 .selection-buttons {
     display: flex;
@@ -651,7 +676,7 @@ body {
     background-color: var(--active-color);
 }
 
-/* Obrazy */
+
 
 .projects-flex {
     list-style: none;
@@ -736,7 +761,7 @@ body {
     color: var(--default-color3);
 }
 
-/* BACKDROP */
+
 
 .backdrop {
     display: flex;
@@ -1026,3 +1051,4 @@ body {
 .modal-btn:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+*/
