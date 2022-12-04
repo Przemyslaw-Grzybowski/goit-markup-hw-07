@@ -28,19 +28,10 @@
         cursor: pointer;
     }
 
-    &__form-data .data-label {
-        position: absolute;
-        margin-top: -18px;
-
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-
-        letter-spacing: 0.01em;
-
-        color: var(--default-color3);
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
     }
 
     &__field-setup {
@@ -60,15 +51,14 @@
         &:has(.modal__field-setup--input:focus) {
             border-color: var(--active-color);
         }
-
         &:has(.modal__field-setup--input:focus) .modal__field-setup--icon {
             fill: var(--active-color);
         }
     }
 
     &__field-setup--icon {
-        margin-top: 14px;
-        margin-left: 15px;
+        margin-top: 8px;
+        margin-left: 2px;
         fill: var(--default-color);
         transition: fill;
         transition-duration: 250ms;
@@ -99,6 +89,7 @@
         width: 448px;
         height: 120px;
         margin-left: 40px;
+        padding: 0px;
 
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
@@ -112,6 +103,7 @@
     }
 
     &__field-comments--input {
+        resize: none;
         width: 416px;
         height: 96px;
         font-family: "Roboto";
@@ -127,7 +119,6 @@
         margin-left: 16px;
 
         border: none;
-        resize: none;
 
         &::placeholder {
             width: 416px;

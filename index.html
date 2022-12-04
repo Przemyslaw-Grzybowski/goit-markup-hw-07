@@ -531,7 +531,7 @@
                             </div>
                         </div>
                         <div class="footer-newsletter">
-                            <label
+                            <div
                                 for="user-email"
                                 class="footer-newsletter__signup"
                             >
@@ -543,7 +543,7 @@
                                     name="email"
                                     placeholder="E-mail"
                                 />
-                            </label>
+                            </div>
 
                             <button
                                 type="button"
@@ -568,11 +568,11 @@
                         <use href="./images/icons.svg#close-btn"></use>
                     </svg>
                 </button>
-                <div class="modal-form">
-                    <p class="modal-form__text">
+                <div class="modal__form">
+                    <p class="modal-cmdtext">
                         Zostaw swoje dane w formularzu poniżej
                     </p>
-                    <form name="name of person" class="modal__form-data">
+                    <form name="name of person" class="modal__form--data">
                         <fieldset class="modal__field-setup">
                             <label for="name" class="modal-label">Imie</label>
                             <svg
@@ -627,16 +627,17 @@
                     </form>
                     <form name="comments field" class="modal__form-data">
                         <fieldset class="modal__field-comments">
-                            <label for="comments" class="modal-label"
+                            <label for="comments" class="modal-labelcmt"
                                 >Komentarz</label
                             >
 
                             <textarea
+                                style="overflow: hidden"
                                 name="comments-section"
                                 id="comments"
                                 class="modal__field-comments--input"
                                 placeholder="Wprowadź tekst"
-                                rows="5"
+                                rows="3"
                             ></textarea>
                         </fieldset>
                     </form>

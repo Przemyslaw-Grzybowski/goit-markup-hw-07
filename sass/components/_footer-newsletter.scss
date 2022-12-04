@@ -6,7 +6,7 @@
     margin-left: 78px;
     gap: 12px;
 
-    &__sigunp {
+    &__signup {
         display: flex;
         flex-direction: column;
 
@@ -17,9 +17,8 @@
         line-height: 16px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
-        color: var(--default-color2);
         padding-bottom: 20px;
+        color: var(--default-color2);
     }
 
     &__signup--mail {
