@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --active-color: #2196f3;
   --bcg1-color: #2f303a;
@@ -103,7 +110,7 @@ body {
   cursor: pointer;
   color: var(--active-color);
 }
-.header-sides__webpage-one {
+.header-sides__webpage--active {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -118,44 +125,15 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-sides__webpage-one:hover {
+.header-sides__webpage--active:hover {
   cursor: pointer;
   color: var(--active-color);
 }
-.header-sides__webpage-one::after {
+.header-sides__webpage--active::after {
   position: absolute;
   content: "";
   height: 4px;
   background-color: var(--active-color);
-  width: 100%;
-  border-radius: 2px;
-  bottom: -33px;
-  left: 0px;
-}
-.header-sides__webpage-two {
-  position: relative;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--default-color);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-sides__webpage-two:hover {
-  cursor: pointer;
-  color: var(--active-color);
-}
-.header-sides__webpage-two::after {
-  position: absolute;
-  content: "";
-  height: 4px;
-  background-color: #2196f3;
   width: 100%;
   border-radius: 2px;
   bottom: -33px;
@@ -949,8 +927,8 @@ body {
   fill: var(--active-color);
 }
 .modal__field-setup--icon {
-  margin-top: 8px;
-  margin-left: 2px;
+  margin-top: 13px;
+  margin-left: 15px;
   fill: var(--default-color);
   -webkit-transition: fill;
   transition: fill;
@@ -960,7 +938,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__field-setup--input {
-  margin-left: 15px;
+  padding-left: 15px;
   border: none;
   font-family: "Roboto";
   font-style: normal;
