@@ -9,7 +9,8 @@
     margin-bottom: 32px;
     gap: 46px;
 
-    &__webpage {
+    &__webpage,
+    &__webpage--active {
         position: relative;
         font-weight: 500;
         font-size: 14px;
@@ -28,22 +29,6 @@
     }
 
     &__webpage--active {
-        position: relative;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: var(--default-color);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover {
-            cursor: pointer;
-            color: var(--active-color);
-        }
-
         &::after {
             position: absolute;
             content: "";
